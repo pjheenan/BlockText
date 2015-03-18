@@ -21,9 +21,10 @@ public class CooperTextView extends TextView {
     int basePadding = 4;
     int padding = 12;
     int count;
-    int padding5x;
-    int paddingHalf;
+    int paddingSingleRowBottom;
+    int paddingNotRow1Bottom;
     int padding25x;
+    int paddingRow1Bottom;
 
     public CooperTextView(Context context) {
         super(context);
@@ -48,9 +49,11 @@ public class CooperTextView extends TextView {
 
     void presets() {
         padding = Math.round(TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, basePadding, getContext().getResources().getDisplayMetrics()));
-        padding5x = padding * 5;
-        paddingHalf = padding / 2;
+//        padding5x = padding * 5;
+        paddingSingleRowBottom = padding / 2;
         padding25x = (int)(padding * 2.5f);
+        paddingRow1Bottom = (int)(padding * 4.5);
+        paddingNotRow1Bottom = padding * 4;
     }
 
     @Override
@@ -66,9 +69,12 @@ public class CooperTextView extends TextView {
             bgRect.right = (int) getLayout().getSecondaryHorizontal(array.get(i) + (i == (count - 1) ? 1 : 0)) + padding25x;
 
             if (i == 0) {
-                bgRect.bottom -= count > 1 ? padding5x : paddingHalf;
+                bgRect.bottom -= (count > 1) ? paddingRow1Bottom : paddingSingleRowBottom;
             } else {
                 bgRect.top -= padding25x;
+                if (count > 1 && i < (count -1)) {
+                    bgRect.bottom -= paddingNotRow1Bottom;
+                }
             }
             canvas.drawRect(bgRect, bgPaint);
         }
