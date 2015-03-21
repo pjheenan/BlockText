@@ -21,7 +21,7 @@ public class MainActivity extends ActionBarActivity {
         Typeface face = Typeface.createFromAsset(getAssets(), "CooperHewitt-Bold.otf");
 
         CooperTextView textView = (CooperTextView) findViewById(R.id.text);
-        textView.setText("OPENING EXHIBITIONS");
+        textView.setText("OPENING EXHIBITIONS Monday");
         textView.setColour(getResources().getColor(R.color.highlight));
         textView.setTypeface(face);
 
