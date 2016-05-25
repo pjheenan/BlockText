@@ -1,0 +1,54 @@
+03-18 18:22:19.233    2548-2548/com.philheenan.bignews I/System.out﹕ result rect: Rect(0, 24 - 593, 178)
+03-18 18:22:19.233    2548-2548/com.philheenan.bignews I/System.out﹕ result rect: Rect(0, 208 - 863, 365)
+03-18 18:22:19.233    2548-2548/com.philheenan.bignews I/System.out﹕ result rect: Rect(0, 383 - 389, 545)
+
+
+
+Left	Top		Right		Bottom
+0 		24 		593 		178 		154
+0 		208 	863 		365			157
+0 		383 	389 		545			162
+
+		24 		593			178
+		184					187
+		175					180
+
+0 		24 		593 		238			214
+0 		238 	863 		413			175
+0 		413 	389 		545			132
+
+		214 				238
+		214 				175
+		175					132
+
+03-18 18:40:43.611    2962-2962/com.philheenan.bignews I/System.out﹕ result rect: Rect(0, 24 - 593, 184)
+03-18 18:40:43.611    2962-2962/com.philheenan.bignews I/System.out﹕ result rect: Rect(0, 208 - 863, 365)
+03-18 18:40:43.611    2962-2962/com.philheenan.bignews I/System.out﹕ result rect: Rect(0, 383 - 389, 545)
+4.5
+0 		24 		593 		184 		160
+0 		208 	863 		365			157
+0 		383 	389 		545			162
+
+		24 		593			181
+		184					187
+		175					180
+
+
+
+text size: 135.0
+font metrics: - ascent: -101.25 - descent: 33.75 - leading: 40.5 - top: -130.68 - bottom: 30.51
+
+base rect: Rect(24, 238) - 214
+bottom padding: 0
+top padding: 24
+line height: 229
+compound bottom padding: 0
+compound top padding: 24
+modified rect: Rect(24, 184) - 160
+
+base rect: Rect(238, 413) - 175
+bottom Offset: 0
+bottom Offset: 24
+modified rect: Rect(208, 365) - 157
+
+
